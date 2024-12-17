@@ -1,0 +1,63 @@
+/* Refined Navbar Styles */
+
+.navbar {
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #1F4529;
+  padding: 15px 20px;
+  width: 100%;
+  box-sizing: border-box; 
+  min-height: 120px;
+  top: 0;
+  left: 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.hamburger {
+  cursor: pointer;
+  font-size: 26px;
+  color: #E8ECD7;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.hamburger:hover {
+  color: #EED3B1;
+  transform: scale(1.1);
+}
+
+.title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #E8ECD7;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  letter-spacing: 1px;
+}
+
+.clock {
+  visibility:collapse;
+  font-size: 18px;
+  color: #EED3B1;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.clock:hover {
+  color: #E8ECD7;
+}
+
+@media (max-width: 768px) {
+  .title {
+      font-size: 24px;
+  }
+
+  .hamburger {
+      font-size: 22px;
+  }
+
+  .clock {
+      font-size: 16px;
+  }
+}

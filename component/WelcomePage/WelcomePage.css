@@ -1,0 +1,74 @@
+/* Refined Welcome Screen Styles */
+
+.welcome-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: radial-gradient(circle, #E8ECD7, #47663B);
+}
+
+.welcome-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #FFFFFF;
+  /* border-radius: 15px; */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  /* width: 1000px; */
+  width: 2500px;
+  height:100vh;
+  border: 2px solid #1F4529;
+  background-image: url('https://static.vecteezy.com/system/resources/thumbnails/015/354/882/original/dark-wood-surface-seamless-texture-loop-dark-wooden-board-panel-background-vertical-across-tree-fibers-direction-video.jpg')
+}
+
+.welcome-box h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: #E8ECD7;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.welcome-box p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #E8ECD7;
+  font-weight: 500;
+  
+}
+
+.start-button {
+  background-color: #1F4529;
+  color: #E8ECD7;
+  padding: 12px 25px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-top: 5px;
+}
+
+.start-button:hover {
+  background-color: #47663B;
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .welcome-box h1 {
+      font-size: 2rem;
+  }
+
+  .welcome-box p {
+      font-size: 1rem;
+  }
+
+  .start-button {
+      font-size: 0.9rem;
+      padding: 10px 20px;
+  }
+}

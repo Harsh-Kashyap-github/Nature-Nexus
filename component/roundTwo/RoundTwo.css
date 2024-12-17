@@ -1,0 +1,172 @@
+/* Refined Nature-Themed Quiz Component CSS */
+
+.q-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: radial-gradient(circle, #b9fbc0 30%, #52b788 70%, #2d6a4f 100%); */
+  background-image: url('https://wallpaperaccess.com/full/1132928.jpg');
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: rgba(255, 255, 255, 0.9);
+  border: 2px solid #2d6a4f;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  max-width: 700px;
+  width: 100%;
+  margin: 5vh auto;
+  overflow: hidden;
+}
+
+.header {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #2d6a4f;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.questionContainer {
+  width: 100%;
+  text-align: center;
+  background: #d8f3dc;
+  padding: 25px;
+  border-radius: 15px;
+  border: 1px solid #40916c;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.questionText {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #1b4332;
+  font-weight: bold;
+}
+
+.optionsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.optionButton {
+  padding: 15px;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  border: 2px solid #74c69d;
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s, color 0.3s;
+  background: #b7e4c7;
+  color: #1b4332;
+  font-weight: bold;
+}
+
+.optionButton:hover {
+  background-color: #52b788;
+  color: #ffffff;
+  transform: scale(1.05);
+}
+
+.optionButton.selected {
+  background-color: #2d6a4f;
+  color: white;
+  transform: scale(1.1);
+}
+
+.navigationContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.navButton,
+.submitButton {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.navButton {
+  background-color: #74c69d;
+}
+
+.navButton:disabled {
+  background-color: #d8f3dc;
+  cursor: not-allowed;
+}
+
+.navButton:hover:not(:disabled) {
+  background-color: #40916c;
+  transform: scale(1.05);
+}
+
+.submitButton {
+  background-color: #1b4332;
+}
+
+.submitButton:hover {
+  background-color: #081c15;
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .header {
+      font-size: 2rem;
+  }
+
+  .questionText {
+      font-size: 1.5rem;
+  }
+
+  .optionButton {
+      font-size: 1rem;
+  }
+
+  .navButton, .submitButton {
+      font-size: 1rem;
+  }
+}
+
+.rulesButton {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #2e8b57; /* Dark Green */
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase; /* Uppercase text */
+  margin-bottom: 15px;
+}
+
+.rulesButton:hover {
+  background-color: #1f6e44; /* Slightly darker green on hover */
+  transform: scale(1.05); /* Slight grow effect */
+}
+
+.rulesButton:active {
+  background-color: #155d3b; /* Even darker green when pressed */
+  transform: scale(0.98); /* Slight shrink effect when clicked */
+}
+
+.rulesButton:focus {
+  outline: none; /* Remove default outline */
+  box-shadow: 0 0 5px 2px rgba(46, 139, 87, 0.5); /* Glow effect */
+}

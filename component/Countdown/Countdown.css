@@ -1,0 +1,66 @@
+/* Background and general layout */
+.countdown-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+    margin: 5px;
+    
+  }
+  
+  /* Wood theme container box */
+  .countdown-box {
+    background-color:black;
+    /* background-image: url('https://tse2.mm.bing.net/th?id=OIP.6vCwacZHBCh3GfA8ANMtbQHaH_&pid=Api&P=0&h=220'); */
+    color: #fff;
+    padding: 20px 30px;
+    border-radius: 50px;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: auto;
+    height: auto;
+    min-width: 100px;  /* Ensure it doesn't get too small */
+    max-width: 400px;  /* Prevent it from growing too large */
+    box-sizing: border-box;
+  }
+  
+  .countdown-box h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  }
+  .countdown-box p{
+    color: white;
+  }
+  
+  .countdown-timer {
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .countdown-box {
+      padding: 15px 20px;
+      width: 80%;
+    }
+  
+    .countdown-timer {
+      font-size: 28px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .countdown-box {
+      width: 90%;
+      padding: 10px 15px;
+    }
+  
+    .countdown-timer {
+      font-size: 24px;
+    }
+  }
+  

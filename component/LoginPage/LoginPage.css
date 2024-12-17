@@ -1,0 +1,162 @@
+/* Main Container for Layout */
+.Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  /* background:radial-gradient(circle, #b9fbc0 30%, #52b788 70%, #2d6a4f 100%); Nature-inspired gradient */
+  background-image:url('https://wallpaperaccess.com/full/1132928.jpg');
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Login Box Styling */
+.login-box {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  width: 90%;
+  max-width: 500px;
+  height: auto;
+  max-height: 80%;
+  overflow: auto;
+}
+
+.login-box h1 {
+  font-size: 26px;
+  color: #2c5f2d;
+  margin-bottom: 20px;
+}
+
+/* Adding Icon for Login */
+.login-icon {
+  font-size: 50px;
+  color: #56ab2f;
+  margin-bottom: 20px;
+}
+
+/* Login Button */
+.login-button {
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  gap:5px;
+  margin-top: 20px;
+  padding: 15px 25px;
+  font-size: 18px;
+  color: #ffffff;
+  background-color: #1F4529;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 0 4px 15px rgba(86, 171, 47, 0.6);
+}
+
+.login-button:hover {
+  background-color: #3e8e41;
+  box-shadow: 0 6px 20px rgba(86, 171, 47, 0.8);
+}
+
+.login-button:active {
+  transform: scale(0.96);
+}
+
+/* Welcome Box Styling */
+.Welcome-box {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.Welcome-box h1 {
+  font-size: 26px;
+  color: #2c5f2d;
+  margin-bottom: 15px;
+}
+
+/* Loader */
+.Loader-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.Loader {
+  border: 5px solid #d4d4d4;
+  border-top: 5px solid #56ab2f;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+  margin-bottom: 10px;
+}
+
+.Loader-text {
+  font-size: 16px;
+  color: #555;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Icons */
+.login-icon,
+.welcome-icon {
+  font-size: 50px;
+  color: #56ab2f;
+  margin-bottom: 20px;
+}
+
+/* Nature Nexus Quest Message Styling */
+.event-message {
+  font-size: 18px;
+  color: #3e8e41;
+  margin-top: 10px;
+  font-style: italic;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .login-box,
+  .welcome-box {
+    padding: 30px;
+    max-width: 90%;
+  }
+  .login-button {
+    font-size: 16px;
+    padding: 12px 20px;
+  }
+  .login-icon,
+  .welcome-icon {
+    font-size: 40px;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
