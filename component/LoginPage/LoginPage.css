@@ -1,11 +1,9 @@
-/* Main Container for Layout */
 .Container {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   width: 100%;
-  /* background:radial-gradient(circle, #b9fbc0 30%, #52b788 70%, #2d6a4f 100%); Nature-inspired gradient */
   background-image:url('https://wallpaperaccess.com/full/1132928.jpg');
   box-sizing: border-box;
   font-family: 'Arial', sans-serif;
