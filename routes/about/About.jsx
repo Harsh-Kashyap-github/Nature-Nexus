@@ -8,7 +8,7 @@ function About() {
         <h1 className="aboutTitle">PRAKRITI: The Techno-Environmental Club</h1>
       </div>
       <div className="aboutContent">
-      <div class="club-introduction">
+      <div className="club-introduction">
   <p>
     <strong>Prakriti</strong>, the Techno-Environmental Club of NIT Durgapur, is a pioneering force for environmental awareness and action among engineers. We challenge the notion that technology and nature are at odds, striving to shape <em>Green Engineers</em>—innovators who champion sustainability and work towards minimizing environmental risks.
   </p>
@@ -21,7 +21,7 @@ function About() {
 
   <br/>
 
-  <div class="initiatives">
+  <div className="initiatives">
     <p>
       Through a variety of impactful initiatives like afforestation drives, waste management campaigns, workshops, and awareness programs, Prakriti promotes collective responsibility and environmental stewardship. By blending education, innovation, and action, the club envisions a future where progress and ecological harmony coexist seamlessly.
     </p>
