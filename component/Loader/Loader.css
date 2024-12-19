@@ -3,7 +3,8 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: linear-gradient(135deg, #dcedc8, #c5e1a5, #a5d6a7); /* Vibrant green gradient */
+  background: radial-gradient(circle, #6fb970, #1F4529); 
+  overflow: hidden;
 }
 
 .loader {
@@ -12,33 +13,54 @@
   height: 150px;
 }
 
-.spinner-ring {
+.ring {
   position: absolute;
   width: 100%;
   height: 100%;
-  border: 8px solid transparent;
-  border-top: 8px solid #4caf50; /* Dark Green */
+  border: 3px solid transparent;
   border-radius: 50%;
   animation: spin 1.5s linear infinite;
-  filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.2));
 }
 
-.spinner-ring-2 {
-  width: 120px;
-  height: 120px;
-  top: 15px;
-  left: 15px;
-  border-top: 8px solid #81c784; /* Lighter Green */
-  animation: spin-reverse 2s linear infinite;
+.ring:nth-child(1) {
+  border-top: 3px solid #388e3c; /* Dark green */
 }
 
-.spinner-ring-3 {
+.ring:nth-child(2) {
+  border-top: 3px solid #43a047; /* Medium green */
+  width: 130px;
+  height: 130px;
+  animation-delay: -0.2s;
+}
+
+.ring:nth-child(3) {
+  border-top: 3px solid #66bb6a; /* Light green */
+  width: 110px;
+  height: 110px;
+  animation-delay: -0.4s;
+}
+
+.ring:nth-child(4) {
+  border-top: 3px solid #81c784; /* Lighter green */
   width: 90px;
   height: 90px;
-  top: 30px;
-  left: 30px;
-  border-top: 8px solid #a5d6a7; /* Even Lighter Green */
-  animation: spin 2.5s linear infinite;
+  animation-delay: -0.6s;
+}
+
+.ring:nth-child(5) {
+  border-top: 3px solid #a5d6a7; /* Soft green */
+  width: 70px;
+  height: 70px;
+  animation-delay: -0.8s;
+}
+
+.center-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 36px;
+  color: #33691e; /* Dark green */
 }
 
 @keyframes spin {
@@ -48,24 +70,4 @@
   100% {
     transform: rotate(360deg);
   }
-}
-
-@keyframes spin-reverse {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(-360deg);
-  }
-}
-
-.center-text {
-  position: absolute;
-  top: 65%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 18px;
-  font-weight: bold;
-  color: #388e3c; /* Dark Green */
-  text-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3);
 }

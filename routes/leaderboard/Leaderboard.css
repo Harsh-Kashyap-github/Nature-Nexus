@@ -78,7 +78,7 @@
   }
   
   .leader-table tr:nth-child(even) {
-    background-color: #f5f5dc;
+    background-color: #c4f3c4;
   }
   
   .leader-table tr:hover {
@@ -86,7 +86,7 @@
   }
   
   .highlight-row {
-    background-color: #ffffe0 !important;
+    background-color: rgba(234, 231, 81, 0.857) !important;
   }
   
   /* Responsive Design */
