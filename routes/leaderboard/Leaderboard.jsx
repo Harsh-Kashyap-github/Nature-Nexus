@@ -75,7 +75,7 @@ const Leaderboard = () => {
               <td>{index + 1}</td>
               <td>{player.name || 'Anonymous'}</td>
               <td>{player.totalScore}</td>
-              <td>{player.activeRound || '-'}</td>
+              <td>{player.activeRound -1 || '-'}</td>
               <td>
                 {player.roundSubmitTime[player.activeRound]?.toDate()?.toLocaleString() || '-'}
               </td>
