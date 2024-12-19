@@ -95,7 +95,9 @@ const RoundFour = () => {
         },
         roundSubmitTime: {
           ...user.roundSubmitTime,
-          3: new Date(),
+          3:{
+            seconds: Math.floor(Date.now() / 1000),
+          },
         },
         activeRound: 4,
       });

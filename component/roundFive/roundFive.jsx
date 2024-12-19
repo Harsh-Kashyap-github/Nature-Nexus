@@ -111,7 +111,12 @@ const RoundFive = () => {
         },
         roundSubmitTime: {
           ...user.roundSubmitTime,
-          4: new Date(),
+          4:{
+            seconds: Math.floor(Date.now() / 1000),
+          },
+          5:{
+            seconds: Math.floor(Date.now() / 1000),
+          },
         },
         activeRound: 5,
       });

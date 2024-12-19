@@ -104,11 +104,12 @@ const RoundTwo = () => {
         },
         roundSubmitTime: {
           ...user.roundSubmitTime,
-          1: new Date(),
+          1:{
+            seconds: Math.floor(Date.now() / 1000),
+          },
         },
         activeRound: 2,
       });
-
       // console.log('Data uploaded successfully:', {
       //   score,
       //   completeAnswers,

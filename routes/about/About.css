@@ -1,0 +1,107 @@
+/* General container for about section */
+.aboutContainer {
+    color: #2e7d32;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    min-height: 100vh;
+}
+
+/* Header Styling */
+.aboutHeader {
+    background-color: #66bb6a;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+/* Title Styling */
+.aboutTitle {
+    font-size: 2.5em;
+    margin: 0;
+    font-weight: bold;
+}
+
+/* Content Styling */
+.aboutContent {
+    max-width: 1000px;
+    background-color: rgba(255, 255, 255, 0.832);
+    border-radius: 10px;
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #388e3c;
+    text-align: justify;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .aboutContainer {
+        padding: 15px;
+    }
+
+    .aboutHeader {
+        font-size: 1.5em;
+    }
+
+    .aboutTitle {
+        font-size: 2em;
+    }
+
+    .aboutContent {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .aboutContainer {
+        padding: 10px;
+    }
+
+    .aboutHeader {
+        font-size: 1.3em;
+    }
+
+    .aboutTitle {
+        font-size: 1.7em;
+    }
+
+    .aboutContent {
+        font-size: 0.9em;
+    }
+}
+
+.club-introduction {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .club-introduction p {
+    font-size: 1.1em;
+    margin-bottom: 1.5em;
+  }
+  
+  .club-introduction .initiatives {
+    background-color: #f2f2f2;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 1.5em;
+  }
+  
+  .club-introduction strong {
+    color: #2d8f56;
+  }
+  
+  .club-introduction em {
+    font-style: italic;
+  }
+  

@@ -10,13 +10,18 @@ function Countdown() {
     if (!eventTimes) return;
 
     const startTime = new Date(eventTimes.startTime);
+    const endTime = new Date(eventTimes.endTime);
+
     const interval = setInterval(() => {
       const currentTime = new Date();
-      const timeDifference = startTime - currentTime;
-      if (timeDifference <= 0) {
+
+      if (currentTime >= endTime) {
         clearInterval(interval);
+        setTimeLeft("Event Ended");
+      } else if (currentTime >= startTime) {
         setTimeLeft("Event Started");
       } else {
+        const timeDifference = startTime - currentTime;
         const hours = Math.floor(timeDifference / (1000 * 60 * 60));
         const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
         const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);

@@ -94,7 +94,9 @@ if(score>15)
         },
         roundSubmitTime: {
           ...user.roundSubmitTime,
-          2: new Date(),
+          2:{
+            seconds: Math.floor(Date.now() / 1000),
+          },
         },
         activeRound:3,
       });

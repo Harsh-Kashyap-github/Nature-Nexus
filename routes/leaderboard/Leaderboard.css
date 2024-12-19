@@ -1,3 +1,137 @@
-.leader-container{
-    min-height: 100vh;
-}
+.leader-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #eafaf1d6;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 128, 0, 0.2);
+  }
+  
+  .leader-title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2e8b57;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Georgia', serif;
+  }
+  
+  .refresh-button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #2e8b57;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .refresh-button:disabled {
+    background-color: #94d3ac;
+    cursor: not-allowed;
+  }
+  
+  .last-updated {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  .user-rank {
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .user-rank p {
+    margin: 5px 0;
+    font-size: 1.2rem;
+    color: #006400;
+  }
+  
+  .highlight {
+    color: #228b22;
+    font-weight: bold;
+  }
+  
+  .leader-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    background-color: #f0fff0;
+  }
+  
+  .leader-table th,
+  .leader-table td {
+    padding: 12px 15px;
+    border: 1px solid #d4edda;
+  }
+  
+  .leader-table th {
+    background-color: #228b22;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Verdana', sans-serif;
+  }
+  
+  .leader-table tr:nth-child(even) {
+    background-color: #f5f5dc;
+  }
+  
+  .leader-table tr:hover {
+    background-color: #d4edda;
+  }
+  
+  .highlight-row {
+    background-color: #ffffe0 !important;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .leader-table {
+      font-size: 0.8rem;
+      display: block;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+  
+    .leader-table th,
+    .leader-table td {
+      padding: 10px;
+    }
+  
+    .leader-title {
+      font-size: 1.5rem;
+    }
+  
+    .user-rank p {
+      font-size: 1rem;
+    }
+  
+    .refresh-button {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .leader-title {
+      font-size: 1.2rem;
+    }
+  
+    .user-rank p {
+      font-size: 0.9rem;
+    }
+  
+    .refresh-button {
+      font-size: 0.8rem;
+      padding: 8px 15px;
+    }
+  
+    .leader-table {
+      font-size: 0.7rem;
+    }
+  }
+  

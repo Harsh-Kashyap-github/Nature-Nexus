@@ -18,12 +18,19 @@ function WelcomePage({ userName, onStart }) {
 
     if (currentTime >= startTime && currentTime <= endTime) {
       onStart();
-    } else {
+  } else {
       const timeLeft = currentTime < startTime ? startTime - currentTime : endTime - currentTime;
-      const hours = Math.floor(timeLeft / (1000 * 60 * 60));
-      const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
-      alert(`The event will start in ${hours} hours and ${minutes} minutes.`);
-    }
+  
+      if (currentTime > endTime) {
+          alert("The event has ended.");
+      } else {
+          const hours = Math.floor(timeLeft / (1000 * 60 * 60));
+          const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+          const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+          alert(`The event will start in ${hours} hours, ${minutes} minutes, and ${seconds} seconds.`);
+      }
+  }
+  
   };
 
   return (

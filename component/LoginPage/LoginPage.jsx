@@ -37,7 +37,7 @@ const LoginPage = () => {
           <FaLeaf className="Welcome-icon" />
           <h1>Welcome, {user.name}!</h1>
           <p className="event-message">
-            Thank you for joining Nature Nexus Quest, organized by PRAKRITI - Techno Environmental Club, NIT Durgapur!
+            Thank you for joining Nature Nexus, organized by PRAKRITI - Techno Environmental Club, NIT Durgapur!
           </p>
         </div>
       </div>
@@ -47,7 +47,7 @@ const LoginPage = () => {
     <div className="Container">
       <div className="login-box">
         <FaLeaf className="login-icon" />
-        <h1>Welcome to Nature Nexus Quest</h1>
+        <h1>Welcome to Nature Nexus</h1>
         <p className="event-message">
           An event by PRAKRITI - Techno Environmental Club, NIT Durgapur.
         </p>
