@@ -45,7 +45,7 @@ const RoundFive = () => {
     }, {});
 
     let score = 0;
-    console.log(filteredAnswers);
+    // console.log(filteredAnswers);
 
     for (let question of RoundFiveQuestions) {
       try {
