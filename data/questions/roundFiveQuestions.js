@@ -1,22 +1,22 @@
 export const RoundFiveQuestions = [
   {
     id: 'X8FJ9D3A',
-    photoPath:`${import.meta.env.BASE_URL}data/photos/photo1.jpeg`, 
+    photoPath:`https://github.com/Harsh-Kashyap-github/Nature-Nexus/blob/main/public/photos/photo1.jpeg?raw=true`, 
     wordLengths: [7,5], 
   },
   {
     id: 'L3KQ7T1P',
-    photoPath:`/data/photos/photo2.jpeg`, 
+    photoPath:`https://github.com/Harsh-Kashyap-github/Nature-Nexus/blob/main/public/photos/photo2.jpeg?raw=true`, 
     wordLengths: [4,2], 
   },
   {
     id: 'N6YV2C4R',
-    photoPath:`/data/photos/photo3.jpeg`, 
+    photoPath:`https://github.com/Harsh-Kashyap-github/Nature-Nexus/blob/main/public/photos/photo3.jpeg?raw=true`, 
     wordLengths: [4,9],
   },
   {
     id: 'Q1ZK5L9M',
-    photoPath:`/data/photos/photo4.jpeg`, 
+    photoPath:`https://github.com/Harsh-Kashyap-github/Nature-Nexus/blob/main/public/photos/photo4.jpeg?raw=true`, 
     wordLengths: [4, 5], 
   },
   // {
