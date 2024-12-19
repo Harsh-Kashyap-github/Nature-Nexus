@@ -7,7 +7,7 @@ function Rules() {
       <div className="rulesHeader">
         <h1 className="rulesTitle">Game Rules</h1>
       </div>
-      <div className="rulesContent">
+      <div className="rulescontent">
         <div className="round">
           <h2 className="roundTitle">Round 1: Quiz Round</h2>
           <p><strong>Format:</strong> This round consists of 10 questions.</p>

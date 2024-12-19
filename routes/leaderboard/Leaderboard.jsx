@@ -40,6 +40,13 @@ const Leaderboard = () => {
     fetchLeaderboardData();
   }, [user]);
 
+  if (!user){
+    return(
+      <div className='leader-container'>
+         <h1 className='leader-title'>Login to see the Leaderboard</h1>
+      </div>
+    )
+  }
   return (
     <div className='leader-container'>
       <h1 className='leader-title'>Leaderboard</h1>

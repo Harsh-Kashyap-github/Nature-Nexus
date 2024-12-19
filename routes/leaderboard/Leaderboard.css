@@ -5,6 +5,7 @@
     background: #eafaf1d6;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 128, 0, 0.2);
+    min-height: 100vh;
   }
   
   .leader-title {

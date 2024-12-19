@@ -22,7 +22,7 @@ function WelcomePage({ userName, onStart }) {
       const timeLeft = currentTime < startTime ? startTime - currentTime : endTime - currentTime;
   
       if (currentTime > endTime) {
-          alert("The event has ended.");
+          onStart();
       } else {
           const hours = Math.floor(timeLeft / (1000 * 60 * 60));
           const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
