@@ -6,6 +6,7 @@ import { doc, getDoc, updateDoc, serverTimestamp } from 'firebase/firestore';
 import Loader from '../Loader/Loader';
 import { UserContext } from '../../src/UserContext';
 import RulesPopup from '../popup/RulesPopup';
+import  photo1 from '../../data/photos/photo1.jpeg'
 // import '../../data/photos'
 const RoundFive = () => {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
