@@ -1,22 +1,22 @@
 export const RoundFiveQuestions = [
   {
     id: 'X8FJ9D3A',
-    photoPath:'./data/photos/photo1.jpeg', 
+    photoPath:`${import.meta.env.BASE_URL}data/photos/photo1.jpeg`, 
     wordLengths: [7,5], 
   },
   {
     id: 'L3KQ7T1P',
-    photoPath:'./data/photos/photo2.jpeg', 
+    photoPath:`${import.meta.env.BASE_URL}data/photos/photo2.jpeg`, 
     wordLengths: [4,2], 
   },
   {
     id: 'N6YV2C4R',
-    photoPath:'./data/photos/photo3.jpeg', 
+    photoPath:`${import.meta.env.BASE_URL}data/photos/photo3.jpeg`, 
     wordLengths: [4,9],
   },
   {
     id: 'Q1ZK5L9M',
-    photoPath:'./data/photos/photo4.jpeg', 
+    photoPath:`${import.meta.env.BASE_URL}data/photos/photo4.jpeg`, 
     wordLengths: [4, 5], 
   },
   // {
