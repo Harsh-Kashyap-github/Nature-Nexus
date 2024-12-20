@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 import './ReportPage.css';
 import { UserContext } from '../../src/UserContext';
 import { RoundFiveQuestions } from '../../data/questions/roundFiveQuestions';
@@ -15,6 +15,9 @@ const roundData = [
 
 const ReportPage = () => {
   const { user } = useContext(UserContext);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   if (!user) {
     return <div className="report-loading">Loading user data...</div>;
