@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useContext } from "react";
 import "./ClockStyles.css";
-import { doc, updateDoc } from "firebase/firestore";
+import { doc, updateDoc, serverTimestamp } from "firebase/firestore";
 import { db } from "../../src/firebase";
 import { UserContext } from "../../src/UserContext";
 
@@ -16,9 +16,10 @@ const Clock = () => {
   }, []);
 
   useEffect(() => {
-    if (!eventTimes || !user) 
-    {setIsVisible(false)
-      return;}
+    if (!eventTimes || !user) {
+      setIsVisible(false);
+      return;
+    }
 
     const currentTime = time.getTime();
     const start = new Date(eventTimes.startTime).getTime();
@@ -38,19 +39,30 @@ const Clock = () => {
   }, [time, eventTimes]);
 
   const handleEndTime = async () => {
-    if (!user || user.activeRound === 5) 
-    { setIsVisible(false)
-      return;} // Ensure user is logged in and activeRound is not already 5
+    if (!user || user.activeRound === 5) {
+      setIsVisible(false);
+      return;
+    }
 
     try {
-      // Update Firestore
+      // Update Firestore: Set activeRound to 5 and update roundSubmitTime for the 4th round
       const userDoc = doc(db, "users", user.uid);
-      await updateDoc(userDoc, { activeRound: 5 });
+      await updateDoc(userDoc, {
+        activeRound: 5,
+        [`roundSubmitTime.4`]: serverTimestamp(), // Use serverTimestamp for Firestore
+      });
 
       // Update Context
-      setUser((prevUser) => ({ ...prevUser, activeRound: 5 }));
+      setUser((prevUser) => ({
+        ...prevUser,
+        activeRound: 5,
+        roundSubmitTime: {
+          ...prevUser.roundSubmitTime,
+          4: { seconds: Math.floor(Date.now() / 1000) }, // Use seconds-based timestamp for context
+        },
+      }));
     } catch (error) {
-      console.error("Error updating active round:", error);
+      console.error("Error updating active round or roundSubmitTime:", error);
     }
   };
 

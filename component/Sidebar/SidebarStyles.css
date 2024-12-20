@@ -5,7 +5,7 @@
   left: 0;
   width: 250px;
   height: 100%;
-  background: linear-gradient(135deg, #2f4f4f, #228b22);
+  background: linear-gradient(155deg,#1F4529, #2f4f4f);
   box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
   overflow-x: hidden;
   transform: translateX(-100%);
